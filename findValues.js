@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-let endpointsString = `https://jsonbase.com/lambdajson_type1/793
+const endpointsString = `https://jsonbase.com/lambdajson_type1/793
 https://jsonbase.com/lambdajson_type1/955
 https://jsonbase.com/lambdajson_type1/231
 https://jsonbase.com/lambdajson_type1/931
@@ -21,7 +21,7 @@ https://jsonbase.com/lambdajson_type4/521
 https://jsonbase.com/lambdajson_type4/350
 https://jsonbase.com/lambdajson_type4/64`
 
-let endpointsArray = endpointsString.split('\n')
+const endpointsArray = endpointsString.split('\n')
 let isDoneTrue = 0
 let isDoneFalse = 0
 
