@@ -25,6 +25,7 @@ const endpointsArray = endpointsString.split('\n')
 let isDoneTrue = 0
 let isDoneFalse = 0
 
+//1.Получить ответ с одного ендпоинта
 const getResponse = async (endpoint) => {
   try {
     for (let i = 0; i < 3; i++) {
@@ -41,6 +42,7 @@ const getResponse = async (endpoint) => {
   }
 }
 
+//2. Найти поле isDone в теле ответа полученого с сервера
 const findIsDone = (obj) => {
   for (const property in obj) {
     if (typeof obj[property] === 'object') {
@@ -56,6 +58,7 @@ const findIsDone = (obj) => {
   return { isDoneTrue, isDoneFalse }
 }
 
+//3.Пройтись по всем ендпоинтам
 const final = async () => {
   let finalResult
 
